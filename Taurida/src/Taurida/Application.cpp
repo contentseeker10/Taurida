@@ -1,3 +1,4 @@
+#include "trdpch.h"
 #include "Application.h"
 
 #include "Taurida/Events/ApplicationEvent.h"

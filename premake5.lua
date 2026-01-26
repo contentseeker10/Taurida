@@ -18,6 +18,9 @@ project "Taurida"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "trdpch.h"
+	pchsource "Taurida/src/trdpch.cpp"
+
 	files 
 	{
 		"%{prj.name}/src/**.h",

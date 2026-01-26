@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Taurida {
 
 	class TAURIDA_API MouseMovedEvent : public Event

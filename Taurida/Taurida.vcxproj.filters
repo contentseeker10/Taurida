@@ -34,6 +34,7 @@
     <ClInclude Include="src\Taurida\Log.h">
       <Filter>Taurida</Filter>
     </ClInclude>
+    <ClInclude Include="src\trdpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Taurida\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Taurida\Log.cpp">
       <Filter>Taurida</Filter>
     </ClCompile>
+    <ClCompile Include="src\trdpch.cpp" />
   </ItemGroup>
 </Project>

@@ -2,9 +2,6 @@
 
 #include "Taurida/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Taurida {
 
 	// Events in Taurida are currently blocking meaning when an event occurs
