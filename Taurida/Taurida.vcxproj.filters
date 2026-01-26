@@ -5,7 +5,7 @@
       <UniqueIdentifier>{CF73A530-3B53-24CC-446B-AFA2B0C98A2D}</UniqueIdentifier>
     </Filter>
     <Filter Include="Taurida\Events">
-      <UniqueIdentifier>{20aa8dfa-b098-4eb2-a81e-768a493bcdd2}</UniqueIdentifier>
+      <UniqueIdentifier>{D3E056CC-BFAE-4AD2-A842-BBF894AF2637}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -19,20 +19,20 @@
     <ClInclude Include="src\Taurida\EntryPoint.h">
       <Filter>Taurida</Filter>
     </ClInclude>
+    <ClInclude Include="src\Taurida\Events\ApplicationEvent.h">
+      <Filter>Taurida\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Taurida\Events\Event.h">
+      <Filter>Taurida\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Taurida\Events\KeyEvent.h">
+      <Filter>Taurida\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Taurida\Events\MouseEvent.h">
+      <Filter>Taurida\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Taurida\Log.h">
       <Filter>Taurida</Filter>
-    </ClInclude>
-    <ClInclude Include="Event.h">
-      <Filter>Taurida\Events</Filter>
-    </ClInclude>
-    <ClInclude Include="KeyEvent.h">
-      <Filter>Taurida\Events</Filter>
-    </ClInclude>
-    <ClInclude Include="ApplicationEvent.h">
-      <Filter>Taurida\Events</Filter>
-    </ClInclude>
-    <ClInclude Include="MouseEvent.h">
-      <Filter>Taurida\Events</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

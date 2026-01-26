@@ -57,7 +57,7 @@ namespace Taurida {
 	class EventDispatcher
 	{
 		template<typename T>
-		using EventFn = std::_Can_call_function_object<bool(T&)>;
+		using EventFn = std::function<bool(T&)>;
 	public:
 		EventDispatcher(Event& event) 
 			: m_Event(event) {}
@@ -79,6 +79,11 @@ namespace Taurida {
 	inline std::ostream& operator<<(std::ostream& os, const Event& e)
 	{
 		return os << e.ToString();
+	}
+
+	inline std::string format_as(const Event& e) 
+	{ 
+		return e.ToString(); 
 	}
 
 }
