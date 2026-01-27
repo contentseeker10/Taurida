@@ -17,14 +17,12 @@ IncludeDir["GLFW"] = "Taurida/vendor/GLFW/include"
 include "Taurida/vendor/GLFW"
 
 project "GLFW"
-	staticruntime "on"
 	buildoptions "/utf-8"
 
 project "Taurida"
 	location "Taurida"
 	kind "SharedLib"
 	language "C++"
-	staticruntime "on"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -71,24 +69,23 @@ project "Taurida"
 
 	filter "configurations:Debug"
 		defines "TRD_DEBUG"
-		runtime "Debug"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "TRD_RELEASE"
-		runtime "Release"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "TRD_DIST"
-		runtime "Release"
+		buildoptions "/MD"
 		optimize "On"
 
 project "Sandbox"
 	location "Sandbox"
 	kind "ConsoleApp"
 	language "C++"
-	staticruntime "on"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -125,15 +122,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "TRD_DEBUG"
-		runtime "Debug"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "TRD_RELEASE"
-		runtime "Release"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "TRD_DIST"
-		runtime "Release"
+		buildoptions "/MD"
 		optimize "On"

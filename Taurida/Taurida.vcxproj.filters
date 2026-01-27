@@ -37,6 +37,12 @@
     <ClInclude Include="src\Taurida\Events\MouseEvent.h">
       <Filter>Taurida\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Taurida\Layer.h">
+      <Filter>Taurida</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Taurida\LayerStack.h">
+      <Filter>Taurida</Filter>
+    </ClInclude>
     <ClInclude Include="src\Taurida\Log.h">
       <Filter>Taurida</Filter>
     </ClInclude>
@@ -50,6 +56,12 @@
       <Filter>Platform</Filter>
     </ClCompile>
     <ClCompile Include="src\Taurida\Application.cpp">
+      <Filter>Taurida</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Taurida\Layer.cpp">
+      <Filter>Taurida</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Taurida\LayerStack.cpp">
       <Filter>Taurida</Filter>
     </ClCompile>
     <ClCompile Include="src\Taurida\Log.cpp">
