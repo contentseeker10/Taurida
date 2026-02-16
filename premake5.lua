@@ -14,14 +14,19 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 IncludeDir = {}
 IncludeDir["GLFW"] = "Taurida/vendor/GLFW/include"
 IncludeDir["Glad"] = "Taurida/vendor/Glad/include"
+IncludeDir["ImGui"] = "Taurida/vendor/imgui"
 
 include "Taurida/vendor/GLFW"
 include "Taurida/vendor/Glad"
+include "Taurida/vendor/imgui"
 
 project "Glad"
 	buildoptions "/utf-8"
 
 project "GLFW"
+	buildoptions "/utf-8"
+
+project "ImGui"
 	buildoptions "/utf-8"
 
 project "Taurida"
@@ -46,13 +51,15 @@ project "Taurida"
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
-		"%{IncludeDir.Glad}"
+		"%{IncludeDir.Glad}",
+		"%{IncludeDir.ImGui}"
 	}
 
 	links 
 	{
 		"GLFW",
 		"Glad",
+		"ImGui",
 		"opengl32.lib"
 	}
 

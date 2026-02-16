@@ -6,6 +6,8 @@
 #include "Taurida/Layer.h"
 #include "Taurida/Log.h"
 
+#include "Taurida/ImGui/ImGuiLayer.h"
+
 // ---Entry Point------------------------
 #include "Taurida/EntryPoint.h"
 // --------------------------------------

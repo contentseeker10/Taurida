@@ -4,14 +4,23 @@
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Taurida">
       <UniqueIdentifier>{CF73A530-3B53-24CC-446B-AFA2B0C98A2D}</UniqueIdentifier>
     </Filter>
     <Filter Include="Taurida\Events">
       <UniqueIdentifier>{D3E056CC-BFAE-4AD2-A842-BBF894AF2637}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Taurida\ImGui">
+      <UniqueIdentifier>{39480F73-A508-8BA9-6E43-D426DAC2CF85}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\WindowsWindow.h">
       <Filter>Platform</Filter>
     </ClInclude>
@@ -37,6 +46,9 @@
     <ClInclude Include="src\Taurida\Events\MouseEvent.h">
       <Filter>Taurida\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Taurida\ImGui\ImGuiLayer.h">
+      <Filter>Taurida\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Taurida\Layer.h">
       <Filter>Taurida</Filter>
     </ClInclude>
@@ -52,11 +64,17 @@
     <ClInclude Include="src\trdpch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\WindowsWindow.cpp">
       <Filter>Platform</Filter>
     </ClCompile>
     <ClCompile Include="src\Taurida\Application.cpp">
       <Filter>Taurida</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Taurida\ImGui\ImGuiLayer.cpp">
+      <Filter>Taurida\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\Taurida\Layer.cpp">
       <Filter>Taurida</Filter>
